@@ -12,25 +12,31 @@ export const status = {
 export const location = {
   taichung: "Taichung",
   taipei: "Taipei",
+  remote: "Remote",
 };
 
 export const framework = {
   vue: "Vue",
   laravel: "Laravel",
+  django: "Django",
 };
 export const stack = {
   docker: "Docker",
   jwt: "JWT",
+  postgreSQL: "PostgreSQL",
+  sqlServer: "SQL Server",
 };
 
 export const language = {
   java: "Java",
   php: "PHP",
   node: "Node.js",
+  python: "Python",
 };
 export const jobList = [
   {
     company: "日新技術有限公司",
+    links: "https://www.104.com.tw/company/1a2x6bl1pm",
     location: location.taichung,
     framework: framework.vue,
     lowSalary: 40000,
@@ -41,6 +47,7 @@ export const jobList = [
   },
   {
     company: "睿訊有限公司",
+    links: "https://www.104.com.tw/company/1a2x6bj0c3",
     location: location.taipei,
     framework: framework.laravel,
     lowSalary: null,
@@ -50,5 +57,18 @@ export const jobList = [
     status: status.active,
     stack: [stack.jwt, stack.docker],
     language: [language.java, language.php, language.node],
+  },
+  {
+    company: "吃香喝辣科技股份有限公司",
+    links: "https://www.104.com.tw/company/1a2x6bk6bo",
+    location: location.remote,
+    framework: framework.django,
+    lowSalary: null,
+    highSalary: 160000,
+    jobTitle: "外商 - [資深] 後端網頁開發工程師 (全遠端) ",
+    jotType: jobTypes.backEnd,
+    status: status.active,
+    stack: [stack.postgreSQL, stack.sqlServer],
+    language: [language.java, language.node, language.python],
   },
 ];
