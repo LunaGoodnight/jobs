@@ -28,6 +28,7 @@ export const stack = {
   sqlServer: "SQL Server",
   webSocket: "WebSocket",
   flutter: "Flutter",
+  php: "PHP",
 };
 
 export const language = {
@@ -48,7 +49,7 @@ export const jobList = [
     jobTitle: "WEB前端工程師",
     jotType: jobTypes.frontEnd,
     status: status.active,
-    stack: [stack.flutter],
+    stack: [stack.flutter, stack.php],
   },
   {
     company: "睿訊有限公司",
