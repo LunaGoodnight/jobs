@@ -20,6 +20,7 @@ export const framework = {
   vue: "Vue",
   laravel: "Laravel",
   django: "Django",
+  angular: "Angular",
 };
 export const stack = {
   docker: "Docker",
@@ -29,6 +30,8 @@ export const stack = {
   webSocket: "WebSocket",
   flutter: "Flutter",
   php: "PHP",
+  node: "Node.js",
+  angular: "Angular",
 };
 
 export const language = {
@@ -88,6 +91,19 @@ export const jobList = [
     jotType: jobTypes.frontEnd,
     status: status.active,
     stack: [stack.webSocket],
+    language: [language.javaScript],
+  },
+  {
+    company: "美樂家有限公司台灣分公司",
+    links: "https://www.104.com.tw/job/7if5t?jobsource=jolist_b_relevance",
+    location: location.taipei,
+    framework: framework.angular,
+    lowSalary: null,
+    highSalary: null,
+    jobTitle: "Front End Web Developer (網頁前端開發工程師)",
+    jotType: jobTypes.frontEnd,
+    status: status.active,
+    stack: [stack.node],
     language: [language.javaScript],
   },
 ];
