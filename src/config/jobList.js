@@ -26,7 +26,8 @@ export const stack = {
   jwt: "JWT",
   postgreSQL: "PostgreSQL",
   sqlServer: "SQL Server",
-  webSocket: 'WebSocket',
+  webSocket: "WebSocket",
+  flutter: "Flutter",
 };
 
 export const language = {
@@ -47,6 +48,7 @@ export const jobList = [
     jobTitle: "WEB前端工程師",
     jotType: jobTypes.frontEnd,
     status: status.active,
+    stack: [stack.flutter],
   },
   {
     company: "睿訊有限公司",

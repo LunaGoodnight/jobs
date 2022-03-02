@@ -15,7 +15,6 @@ function App() {
 }
 
 const CompanyTitle = styled.h3`
-  font-size: 1.3rem;
   padding: 0;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -31,11 +30,14 @@ const JobItem = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   padding: 1rem;
+  font-size: 1.5rem;
 `;
 
 const JobTitle = styled.h4`
   color: #fff;
-  font-size: 1.1rem;
+`;
+const JobStacks = styled.div`
+  display: flex;
 `;
 
 const JobSection = () => {
@@ -46,10 +48,10 @@ const JobSection = () => {
         <a href={links} target="_blank">
           <JobTitle>{jobTitle}</JobTitle>
         </a>
-        <div>
+        <JobStacks>
           <h5>用的技術：</h5>
           <div>{stack.join(", ")}</div>
-        </div>
+        </JobStacks>
       </JobItem>
     );
   });
