@@ -13,6 +13,7 @@ export const location = {
   taichung: "Taichung",
   taipei: "Taipei",
   remote: "Remote",
+  kaohsiung: "Kaohsiung",
 };
 
 export const framework = {
@@ -25,6 +26,7 @@ export const stack = {
   jwt: "JWT",
   postgreSQL: "PostgreSQL",
   sqlServer: "SQL Server",
+  webSocket: 'WebSocket',
 };
 
 export const language = {
@@ -32,6 +34,7 @@ export const language = {
   php: "PHP",
   node: "Node.js",
   python: "Python",
+  javaScript: "JavaScript",
 };
 export const jobList = [
   {
@@ -70,5 +73,18 @@ export const jobList = [
     status: status.active,
     stack: [stack.postgreSQL, stack.sqlServer],
     language: [language.java, language.node, language.python],
+  },
+  {
+    company: "坊和企業有限公司",
+    links: "https://www.104.com.tw/job/7hrsj?jobsource=company_job",
+    location: location.kaohsiung,
+    framework: framework.vue,
+    lowSalary: 1500000,
+    highSalary: null,
+    jobTitle: "網頁高階前端工程師/ Lead Web Frontend Engineer ",
+    jotType: jobTypes.frontEnd,
+    status: status.active,
+    stack: [stack.webSocket],
+    language: [language.javaScript],
   },
 ];
