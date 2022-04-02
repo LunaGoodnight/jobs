@@ -13,6 +13,7 @@ export const location = {
   taichung: "Taichung",
   taipei: "Taipei",
   remote: "Remote",
+  kaohsiung: "Kaohsiung",
 };
 
 export const framework = {
@@ -20,12 +21,19 @@ export const framework = {
   laravel: "Laravel",
   django: "Django",
   react: "React",
+  angular: "Angular",
 };
+
 export const stack = {
   docker: "Docker",
   jwt: "JWT",
   postgreSQL: "PostgreSQL",
   sqlServer: "SQL Server",
+  webSocket: "WebSocket",
+  flutter: "Flutter",
+  php: "PHP",
+  node: "Node.js",
+  angular: "Angular",
 };
 
 export const language = {
@@ -33,7 +41,9 @@ export const language = {
   php: "PHP",
   node: "Node.js",
   python: "Python",
+  javaScript: "JavaScript",
 };
+
 export const jobList = [
   {
     company: "新加坡商耐思人工智能有限公司台灣分公司",
@@ -56,6 +66,7 @@ export const jobList = [
     jobTitle: "WEB前端工程師",
     jobType: jobTypes.frontEnd,
     status: status.active,
+    stack: [stack.flutter, stack.php],
   },
   {
     company: "睿訊有限公司",
@@ -82,5 +93,31 @@ export const jobList = [
     status: status.active,
     stack: [stack.postgreSQL, stack.sqlServer],
     language: [language.java, language.node, language.python],
+  },
+  {
+    company: "坊和企業有限公司",
+    links: "https://www.104.com.tw/job/7hrsj?jobsource=company_job",
+    location: location.kaohsiung,
+    framework: framework.vue,
+    lowSalary: 1500000,
+    highSalary: null,
+    jobTitle: "網頁高階前端工程師/ Lead Web Frontend Engineer ",
+    jotType: jobTypes.frontEnd,
+    status: status.active,
+    stack: [stack.webSocket],
+    language: [language.javaScript],
+  },
+  {
+    company: "美樂家有限公司台灣分公司",
+    links: "https://www.104.com.tw/job/7if5t?jobsource=jolist_b_relevance",
+    location: location.taipei,
+    framework: framework.angular,
+    lowSalary: null,
+    highSalary: null,
+    jobTitle: "Front End Web Developer (網頁前端開發工程師)",
+    jotType: jobTypes.frontEnd,
+    status: status.active,
+    stack: [stack.node],
+    language: [language.javaScript],
   },
 ];
