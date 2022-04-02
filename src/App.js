@@ -1,21 +1,45 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { jobList, jobTypes } from "./config/jobList";
 import styled from "styled-components";
+const Title = styled.h2`
+  font-weight: bold;
+`;
+const Header = styled.header`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+`;
+const Wrapper = styled.div`
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+`;
 
+const Count = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+  width: 100%;
+`;
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <div>
-          前端職缺：
-          {jobList.filter((x) => x.jobType === jobTypes.frontEnd).length}
-        </div>
-
-        <h2>Developer Jobs</h2>
-        <JobSection />
-      </header>
-    </div>
+    <Wrapper className="App">
+      <Header>
+        <Title>Developer Jobs</Title>
+      </Header>
+      <Count>
+        前端職缺：
+        {jobList.filter((x) => x.jobType === jobTypes.frontEnd).length}
+      </Count>
+      <JobSection />
+    </Wrapper>
   );
 }
 
@@ -48,7 +72,7 @@ const JobStacks = styled.div`
 const JobSection = () => {
   return jobList.map(({ company, jobTitle, links, stack = [] }) => {
     return (
-      <JobItem>
+      <JobItem key={links}>
         <CompanyTitle>{company}</CompanyTitle>
         <a href={links} target="_blank">
           <JobTitle>{jobTitle}</JobTitle>
