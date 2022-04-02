@@ -19,6 +19,7 @@ export const framework = {
   vue: "Vue",
   laravel: "Laravel",
   django: "Django",
+  react: "React",
 };
 export const stack = {
   docker: "Docker",
@@ -35,6 +36,17 @@ export const language = {
 };
 export const jobList = [
   {
+    company: "新加坡商耐思人工智能有限公司台灣分公司",
+    links: "https://www.104.com.tw/company/1a2x6bl2di",
+    location: location.taipei,
+    framework: framework.react,
+    lowSalary: null,
+    highSalary: null,
+    jobTitle: "Frontend Engineer / 前端工程師",
+    jobType: jobTypes.frontEnd,
+    status: status.active,
+  },
+  {
     company: "日新技術有限公司",
     links: "https://www.104.com.tw/company/1a2x6bl1pm",
     location: location.taichung,
@@ -42,7 +54,7 @@ export const jobList = [
     lowSalary: 40000,
     highSalary: 60000,
     jobTitle: "WEB前端工程師",
-    jotType: jobTypes.frontEnd,
+    jobType: jobTypes.frontEnd,
     status: status.active,
   },
   {
@@ -53,7 +65,7 @@ export const jobList = [
     lowSalary: null,
     highSalary: null,
     jobTitle: "全/後端工程師",
-    jotType: jobTypes.fullStack,
+    jobType: jobTypes.fullStack,
     status: status.active,
     stack: [stack.jwt, stack.docker],
     language: [language.java, language.php, language.node],
@@ -66,7 +78,7 @@ export const jobList = [
     lowSalary: null,
     highSalary: 160000,
     jobTitle: "外商 - [資深] 後端網頁開發工程師 (全遠端) ",
-    jotType: jobTypes.backEnd,
+    jobType: jobTypes.backEnd,
     status: status.active,
     stack: [stack.postgreSQL, stack.sqlServer],
     language: [language.java, language.node, language.python],
